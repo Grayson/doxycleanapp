@@ -4,6 +4,7 @@
 			(id) RunDoxygenButton
 			(id) PresetWindow
 			(id) PresetField
+			(id) CommandTextView
 			(id) configuration)
 	(ivar-accessors)
 	
@@ -88,4 +89,36 @@
 		((self PresetsPopupButton) addItemWithTitle:"<<No preset>>")
 		(((self PresetsPopupButton) menu) addItem:(NSMenuItem separatorItem))
 		((self PresetsPopupButton) addItemsWithTitles:presets) )
+		
+	(- (void) showCommand:(id)sender is
+		(set command "")
+		(if (and (== YES ((self configuration) objectForKey:"shouldRunDoxygenFirst") )
+				 (!= 0 (((self configuration) objectForKey:"doxygenConfigPath") length) ))
+			(set doxygen ((NSWorkspace sharedWorkspace) fullPathForApplication:"Doxygen"))
+			(set doxygen (doxygen stringByAppendingPathComponent:"Contents/Resources/doxygen"))
+			
+			(set command (+ doxygen " " ((self configuration) objectForKey:"doxygenConfigPath"))) )
+		
+		(set doxyclean ((NSBundle mainBundle) pathForResource:"doxyclean" ofType:"py" inDirectory:"doxyclean"))
+		(set args (+ 
+			"-i " ((self configuration) objectForKey:"pathToXMLFolder") " "
+			"-o " ((self configuration) objectForKey:"outputPath") " "
+			"-n " ((self configuration) objectForKey:"projectName") ))
+		(if (== YES ((self configuration) objectForKey:"shouldOnlyGenerateXML")) (set args (+ args "-x")))
+		
+		(set command (+ command " && " doxyclean " " args))
+		((self CommandTextView) setString:command)
+		
+		
+		(set win ((self CommandTextView) window))
+		(set NSApp (NSApplication sharedApplication))
+		(set mainWin (NSApp mainWindow))
+		(mainWin makeFirstResponder:mainWin)
+		(NSApp beginSheet:win modalForWindow:mainWin modalDelegate:nil didEndSelector:nil contextInfo:nil)
+		(NSApp runModalForWindow:win)
+		(NSApp endSheet:win)
+		(win orderOut:nil) )
+	
+	(- (void) closeCommandWindow:(id)sender is
+		((NSApplication sharedApplication) stopModal) )
 )

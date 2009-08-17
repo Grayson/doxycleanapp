@@ -146,7 +146,7 @@
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				1D0C3E980DE7A6DD0080226A /* Copy frameworks */,
 				1D0C3E9B0DE7A7440080226A /* Properly link Nu framework */,
-				1DD20F5D1039C590004C4A8E /* ShellScript */,
+				1DD20F5D1039C590004C4A8E /* Remove .git info from doxyclean */,
 			);
 			buildRules = (
 			);
@@ -204,13 +204,14 @@
 			shellPath = /bin/sh;
 			shellScript = "install_name_tool -change \"Nu.framework/Versions/A/Nu\" \"@executable_path/../Frameworks/Nu.framework/Versions/A/Nu\" $TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$TARGET_NAME\n";
 		};
-		1DD20F5D1039C590004C4A8E /* ShellScript */ = {
+		1DD20F5D1039C590004C4A8E /* Remove .git info from doxyclean */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Remove .git info from doxyclean";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

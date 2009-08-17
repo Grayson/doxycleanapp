@@ -290,19 +290,17 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>1DD20F5F1039C5AD004C4A8E</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
-									<integer>9</integer>
-									<integer>8</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 61}, {186, 338}}</string>
+							<string>{{0, 0}, {186, 338}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -402,9 +400,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1DD20E921039A005004C4A8E</string>
+				<string>1D4F45ED1039CB97004128C5</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1DD20E931039A005004C4A8E</string>
+				<string>1D4F45EE1039CB97004128C5</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -523,7 +521,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>272221833.09604901</real>
+	<real>272223117.852341</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -538,9 +536,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1D0C3EFE0DE7A89F0080226A</string>
 		<string>/Users/ghansard/Projects/github/doxycleanapp/doxycleanapp.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -665,8 +661,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 198}}</string>
-											<string>{{316, 0}, {378, 198}}</string>
+											<string>{{0, 0}, {316, 201}}</string>
+											<string>{{316, 0}, {378, 201}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -681,8 +677,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 198}}</string>
-											<string>{{0, 198}, {694, 183}}</string>
+											<string>{{0, 0}, {694, 201}}</string>
+											<string>{{0, 201}, {694, 180}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -715,7 +711,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 198}}</string>
+									<string>{{316, 0}, {378, 201}}</string>
 									<key>RubberWindowFrame</key>
 									<string>401 433 694 422 0 0 1440 878 </string>
 								</dict>
@@ -743,13 +739,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>1DD20EAA1039A70D004C4A8E</string>
+				<string>1D4F45EF1039CB97004128C5</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>1DD20EAB1039A70D004C4A8E</string>
-				<string>1DD20EAC1039A70D004C4A8E</string>
-				<string>1DD20EAD1039A70D004C4A8E</string>
-				<string>1DD20EAE1039A70D004C4A8E</string>
-				<string>1DD20EAF1039A70D004C4A8E</string>
+				<string>1D4F45F01039CB97004128C5</string>
+				<string>1D4F45F11039CB97004128C5</string>
+				<string>1D4F45F21039CB97004128C5</string>
+				<string>1D4F45F31039CB97004128C5</string>
+				<string>1D4F45F41039CB97004128C5</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
